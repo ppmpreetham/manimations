@@ -37,5 +37,9 @@ class KissingNumbers2D(Scene):
             point = Dot(pos/2, color=RED, radius=0.05)
             contact_points.add(point)
         
-        self.play(Create(contact_points))        
+        self.play(Create(contact_points))
+        self.play(
+            AnimationGroup(*[Flash(point) for point in contact_points],
+                          lag_ratio=0.1)
+        )      
         self.wait(2)
