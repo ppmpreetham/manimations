@@ -1,4 +1,6 @@
 */__pycache__/
-*/media/
 */*/__pycache__/
-*/*/media/
+*/media/texts
+*/*/media/texts
+*/media/videos/*/*/partial_movie_files
+*/*/media/videos/*/*/partial_movie_files
