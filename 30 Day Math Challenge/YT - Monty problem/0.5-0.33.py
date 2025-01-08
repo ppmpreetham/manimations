@@ -2,7 +2,7 @@ from manim import *
 
 class FractionArrow(Scene):
     def construct(self):
-        
+
         text_1_2 = Text("1/3", font_size=72)
         text_1_3 = Text("2/3", font_size=72)
         

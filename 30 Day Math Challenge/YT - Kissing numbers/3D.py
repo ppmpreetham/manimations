@@ -8,7 +8,7 @@ class KissingNumbers3D(ThreeDScene):
         # axes
         axes = ThreeDAxes(x_range=[-3,3], y_range=[-3,3], z_range=[-3,3])
         self.add(axes)
-        
+         
         central_sphere = Sphere(radius=1, color=BLUE).set_fill(BLUE, opacity=0.5)
         
         # icosahedral arrangement
