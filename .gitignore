@@ -1,6 +1,11 @@
 */__pycache__/
 */*/__pycache__/
+*/*/*/__pycache__/
 */media/texts
+*/*/*/media/texts
+*/*/*/media/Tex
+*/*/media/Tex
+*/*/*/media/videos
 */*/media/texts
 */media/videos/*/*/partial_movie_files
 */*/media/videos/*/*/partial_movie_files
