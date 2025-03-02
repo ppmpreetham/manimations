@@ -35,7 +35,3 @@ class VarianceUniformDistribution(Scene):
         area = axes.get_area(new_graph, x_range=[-a, a], color=BLUE, opacity=0.3)
         self.play(FadeIn(area))
         self.wait(2)
-
-        # Scale everything down
-        self.play(axes.animate.scale(0.5), labels.animate.scale(0.5), new_graph.animate.scale(0.5), point_left.animate.scale(0.5), point_right.animate.scale(0.5), point_top.animate.scale(0.5), area.animate.scale(0.5))
-        self.wait(2)
