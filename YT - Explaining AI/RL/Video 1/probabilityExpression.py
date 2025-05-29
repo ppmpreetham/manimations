@@ -84,7 +84,10 @@ class ProbabilityExpression(Scene):
 
 
         self.wait(2)
-        self.play(FadeOut(new_line))
+        # Remove all new_line objects
+        for obj in self.mobjects.copy():
+            if isinstance(obj, VGroup) and obj == new_line:
+                self.remove(obj)
         self.play(probability_expression.animate.scale(0.5).to_corner(UL), explanation.animate.scale(0.5).to_corner(UL).shift(DOWN * 0.2))
         
         circle1 = Circle(radius=0.5, color=BLUE, fill_opacity=0.5).shift(LEFT*1.5)
